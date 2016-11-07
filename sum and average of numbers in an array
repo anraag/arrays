@@ -1,0 +1,17 @@
+//finding sum and average of numbers in an array
+#include <iostream>
+#include <string>
+#include <array>
+using namespace std;
+
+int main()
+{
+    int sum=0;
+  int num[5]{1,2,3,4,5};
+  for(int i=0;i<(sizeof(num)/sizeof(num[0]));i++){
+      sum = sum+num[i];
+  }
+  int avg=sum/5;
+  cout<<sum<<endl;
+  cout<<avg<<endl;
+}
