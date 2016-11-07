@@ -1,0 +1,29 @@
+//swapping the first and last elements of an array
+#include <iostream>
+#include <string>
+#include <array>
+using namespace std;
+
+int main()
+{
+  char anurag[100];
+  int i,n;
+  cout<<"Enter how many elements you want to insert: ";
+  cin>>n;
+  cout<<endl;
+  
+  for (i=0;i<n;i++){
+      cout<<"Enter a character or a letter: ";
+      cin>>anurag[i];
+      cout<<endl;
+  }
+  char a=anurag[n-1];
+  anurag[n-1]=anurag[0];
+  anurag[0]=a;
+ 
+  
+  cout<<"First element after the swap is :"<<anurag[0]<<endl;
+  cout<<"Last element after the swap is: "<<anurag[n-1]<<endl;
+  
+  return 0;
+}
