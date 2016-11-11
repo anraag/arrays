@@ -1,0 +1,20 @@
+#include<iostream>
+#include<array>
+using namespace std;
+
+int main(){
+    int anurag[6]={1,2,3,4,5,6};
+    int trell[5]={7,8,2,3,9};
+    int i=0;
+    int j=0;
+    int size1=(sizeof(anurag)/sizeof(anurag[1]));
+    int size2=(sizeof(trell)/sizeof(trell[1]));
+    
+    for(i=0;i<size1;i++){
+        for(j=0;j<size2;j++){
+            if(anurag[i]==trell[j]){
+                cout<<anurag[i]<<endl;
+            }
+        }
+    }
+}
