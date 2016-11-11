@@ -1,0 +1,28 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+    int LCM;
+    int n1;
+    int n2;
+    
+    cout<<"Enter a number: ";
+    cin>>n1;
+    cout<<endl;
+    cout<<"Enter another number: ";
+    cin>>n2;
+    cout<<endl;
+    int max=(n1>n2)?n1:n2;
+    while(max!=LCM){
+    if((max%n1==0) && (max%n2==0)){
+        LCM=max;
+        cout<<max;
+    }
+    else{
+        max++;
+    }
+    
+    }
+    return 0;
+}
