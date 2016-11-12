@@ -1,0 +1,22 @@
+#include<iostream>
+#include<array>
+using namespace std;
+
+int main(){
+    int anurag[6]={1,3,2,2,4,5};
+    int i=0;
+    for(i=0;i<6;i++){
+        int count=0;
+        for(int j=0;j<6;j++){
+            if(anurag[i]==anurag[j]){
+                count++;
+                
+            }
+        }
+        if (count==1){
+            cout<<anurag[i];
+            return 0;
+        }
+    }
+    return 0;
+}
